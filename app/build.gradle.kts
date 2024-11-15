@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "dev.samu.composeroomapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "dev.samu.composeroomapp"
@@ -42,26 +42,15 @@ android {
 
 dependencies {
 
-    // Room
-    implementation(libs.androidx.room.runtime)
-    implementation (libs.androidx.room.ktx)
-
     // kapt
     ksp(libs.androidx.room.compiler)
-
-    // Lifecycle
-    implementation(libs.androidx.lifecycle.runtime.ktx.v261)
-
-    // Jetpack Compose
-    implementation(libs.androidx.activity.compose)
-    implementation(libs.ui)
-    implementation(libs.androidx.material)
-    implementation(libs.ui.tooling.preview)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.room.runtime)
+    implementation (libs.androidx.room.ktx)
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
