@@ -1,4 +1,4 @@
-package dev.samu.composeroomapp
+package dev.samu.composeroomapp.data
 
 import androidx.room.*
 

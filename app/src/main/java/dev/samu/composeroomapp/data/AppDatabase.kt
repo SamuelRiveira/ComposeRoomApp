@@ -1,4 +1,4 @@
-package dev.samu.composeroomapp
+package dev.samu.composeroomapp.data
 
 import android.content.Context
 import androidx.room.Database
